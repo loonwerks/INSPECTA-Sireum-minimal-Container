@@ -1,6 +1,6 @@
 FROM ubuntu:24.04
 
-RUN apt update && apt install -y --no-install-recommends git jq openjdk-21-jre-headless wget \
+RUN apt update && apt install -y --no-install-recommends cloc git jq openjdk-21-jre-headless wget \
     && apt-get clean autoclean \
     && apt-get autoremove --yes \
     && rm -rf /var/lib/{apt,dpkg,cache,log}
